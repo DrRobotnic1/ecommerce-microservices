@@ -4,8 +4,6 @@ namespace Cart.Services.CouponApi.Models.Dto
 {
   public class CouponDto
   {
-    [Key]
-    public int CouponId { get; set; }
     [Required]
     public string CouponCode { get; set; }
     [Required]

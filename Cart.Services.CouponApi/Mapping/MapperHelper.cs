@@ -4,11 +4,12 @@ using Cart.Services.CouponApi.Models.Dto;
 
 namespace Cart.Services.CouponApi.Mapping
 {
-  public class MapperConfig:Profile
+  public class MapperHelper:Profile
   {
-    public MapperConfig()
+    public MapperHelper()
     {
-      
+
       CreateMap<Coupon, CouponDto>().ReverseMap();
+    }
   }
 }

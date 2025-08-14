@@ -6,5 +6,6 @@ namespace Cart.Services.CouponApi.Repositories
   {
     Task<IEnumerable<Coupon>> GetAllCouponsAsync();
     Task<Coupon> GetCouponByIdAsync(int id);
+    Task<Coupon> AddAsync(Coupon coupon);
   }
 }
