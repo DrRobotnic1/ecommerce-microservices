@@ -1,3 +1,9 @@
 .vs
 obj
 bin
+/Cart.Services.CouponApi/Migrations
+/Cart.Services.CouponApi/.env
+/Cart.Services.CouponApi/appsettings.Development.json
+/Cart.Services.CouponApi/CouponDb.db-shm
+/Cart.Services.CouponApi/CouponDb.db-wal
+/Cart.Services.CouponApi/CouponDb.db
