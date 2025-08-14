@@ -11,24 +11,24 @@ namespace Cart.Services.CouponApi.Controllers
 
   public class CouponController : BaseController
   {
-    private readonly CouponService _couponService;
+    private readonly CouponService _CouponService;
 
     public CouponController(CouponService couponService)
     {
-      _couponService = couponService;
+      _CouponService = couponService;
     }
 
     [HttpGet]
     public async Task<IActionResult> GetAllAsync()
     {
-      var coupons = await _couponService.GetAllCouponsAsync();
+      var coupons = await _CouponService.GetAllCouponsAsync();
       return Ok(coupons);
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetByIdAsync(int id)
     {
-      var coupon = await _couponService.GetCouponByIdAsync(id);
+      var coupon = await _CouponService.GetCouponByIdAsync(id);
       if (coupon == null)
       {
         return NotFound();
