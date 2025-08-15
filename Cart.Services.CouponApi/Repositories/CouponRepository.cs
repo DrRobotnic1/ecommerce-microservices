@@ -14,6 +14,13 @@ namespace Cart.Services.CouponApi.Repositories
       _context = context;
     }
 
+    public async Task<Coupon> AddAsync(Coupon coupon)
+    {
+      await _context.AddAsync(coupon);
+      _context.SaveChanges();
+      return coupon;
+    }
+
     public async Task<IEnumerable<Coupon>> GetAllCouponsAsync()
     {
       return await _context.Coupons.ToListAsync();

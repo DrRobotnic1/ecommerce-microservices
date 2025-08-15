@@ -22,6 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICouponRepository, CouponRepository>();
 builder.Services.AddScoped<CouponService>();
+
 builder.Services.AddDbContext<CouponDbContext>(options =>
     options.UseSqlite(conn));
 
